@@ -1,0 +1,28 @@
+.movieCard{
+    list-style: none;
+    font-size: 1rem;
+    text-align: center;    
+}
+
+.movieImage{
+    border-radius: 100%;
+    background-color: azure;
+
+    transition: transform .2s; /* Animation */
+}
+
+.movieImage:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+  @media(max-width: 560px){
+    .movieImage{
+        border-radius: 10px;
+        width: 70%;
+        height: auto;
+    }
+
+    .movieImage:hover {
+        transform: scale(1.1);
+    }
+}
