@@ -1,9 +1,8 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-import { MovieGrid } from "./MovieGrid";
-import { MovieDetails } from "./MovieDetails";
 import styles from "./App.module.css";
-import movies from "./Film.json";
+import { MovieDetails } from "./MovieDetails";
+import { LandingPage } from "./pages/LandingPage";
 
 
 export function App() {
@@ -20,7 +19,7 @@ export function App() {
             <main>
                 <Routes>
                     <Route path="/details/:movieId" element={<MovieDetails />} />
-                    <Route path="/" element={<MovieGrid />} />
+                    <Route path="/" element={<LandingPage />} />
                 </Routes>
             </main>
         </Router>
