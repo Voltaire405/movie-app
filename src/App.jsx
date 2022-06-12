@@ -7,7 +7,7 @@ import movies from "./Film.json";
 
 
 export function App() {
-    console.log(movies);
+    //console.log(movies);
     return (
         <Router>
             <header>
