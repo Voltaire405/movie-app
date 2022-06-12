@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 import { MovieGrid } from "./MovieGrid";

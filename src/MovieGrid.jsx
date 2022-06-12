@@ -5,7 +5,7 @@ import styles from "./MovieGrid.module.css";
 export function MovieGrid() {
     return (
         <ul className={styles.movieGrid} >
-            {movies.map((movie, index) => (<MovieCard key={index} movie={movie} />))}
+            {movies.map((movie) => (<MovieCard key={movie.id} movie={movie} />))}
         </ul>
 
     );
